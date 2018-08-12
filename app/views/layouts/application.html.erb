@@ -18,38 +18,261 @@
   <body>
 
     <!--Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
-      <a class="navbar-brand" href="#start">Vintage Furniture</a>
-      <div class="burger">
-        <button class="hamburger">&#9776;</button>
+    <header class="container-full">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark container" role="navigation">
+        <a class="navbar-brand" href="#start">Vintage Furniture</a>
+        <div class="burger">
+          <button class="hamburger">&#9776;</button>
+        </div>
+        <!-- Collapse Navigation-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item table-link">
+              <%= link_to "Tables", root_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item chairs-link">
+              <%= link_to "Chairs", simple_pages_about_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item lamps-link">
+              <%= link_to "Lamps", simple_pages_contact_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item contact-link">
+              <%= link_to "Contact", simple_pages_contact_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item about-link">
+              <%= link_to "About", simple_pages_contact_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <a href="#"><i class="fas fa-search"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </li>
+          </ul>
+        </div> <!-- collapse close -->
+      </nav> <!-- end nav container -->
+      <div class="dropdown-nav">
+        <div class="links">
+            <div class="links-col1 table-col">
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("table1.jpg") %>Old Pallet Table</a>
+              </li>
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("table2.jpg") %>Stained Oak Sideboard</a>
+              </li>
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("table3.jpg") %>Large Slab Dinning Table</a>
+              </li>
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("table4.jpg") %>Picnic Table</a>
+              </li>
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("table5.jpg") %>Retro Storage Unit</a>
+              </li>
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("table6.jpg") %>Oak Sideboard</a>
+              </li>  
+            </div>
+            <div class="links-col1 chairs-col">
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("chair1.jpg") %>Chesterfield Chair Set</a>
+              </li>
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("chair2.jpg") %>Vintage Comfort Chair</a>
+              </li>
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("chair3.jpg") %>Oak Hall Chairs</a>
+              </li>
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("chair4.jpg") %>Upholstered Oak Chairs</a>
+              </li>  
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("chair5.jpg") %>Classical Dinning Chairs</a>
+              </li>
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("chair6.jpg") %>Twin Armchairs</a>
+              </li>
+            </div>
+            <div class="links-col1 lamps-col">
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("lamp1.jpg") %>Retro Element Bulbs</a>
+              </li>
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("lamp2.jpg") %>Metal Ceiling Lamps</a>
+              </li>
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("lamp3.jpg") %>Element Down Lights</a>
+              </li>
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("lamp4.jpg") %>Vintage Switch Lamps</a>
+              </li>
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("lamp5.jpg") %>Brass Up Lights</a>
+              </li>
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("lamp6.jpg") %>Retro Search Light</a>
+              </li>  
+            </div>
+            <div class="links-col2 table-col">
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("table7.jpg") %>Marble Top Dinning Table</a>
+              </li>
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("table8.jpg") %>Wooden Banquet Table</a>
+              </li>
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("table9.jpg") %>Stained Dinning Table</a>
+              </li>
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("table10.jpg") %>Vintage Reception Table</a>
+              </li>
+            </div>
+            <div class="links-col2 chairs-col">
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("chair5.jpg") %>Dining Chairs</a>
+              </li>
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("chair6.jpg") %>Armchairs</a>
+              </li>
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("chair7.jpg") %>Gothic Dinnning Chairs</a>
+              </li>
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("chair8.jpg") %>Art Deco Chairs</a>
+              </li>
+            </div>
+            <div class="links-col2 lamps-col">
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("lamp7.jpg") %>Black Ceiling Lights</a>
+              </li>
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("lamp8.jpg") %>Vintage Metal Lamp</a>
+              </li>
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("lamp9.jpg") %>Retro Switch Light</a>
+              </li>
+              <li class="link-item">
+                <a href="#" class="nav-link roll" <%= image_tag("lamp6.jpg") %>Element Blub</a>
+              </li>
+            </div>
+          </div>
+          <div id="image-display" class="table-img">
+              <%= image_tag("table-preview.jpg", class: "img-fluid preview") %>
+          </div>
+          <div id="image-display" class="chair-img">
+              <%= image_tag("chair-preview.jpg", class: "img-fluid preview") %>
+          </div>
+          <div id="image-display" class="lamp-img">
+              <%= image_tag("lamp-preview.jpg", class: "img-fluid preview") %>
+          </div>
       </div>
-      <!-- Collapse Navigation-->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <%= link_to "Home", root_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "About", simple_pages_about_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "Contact", simple_pages_contact_path, class: "nav-link" %>
-          </li>
-        </ul>
-      </div> <!-- collapse close -->
-    </nav> <!-- end nav container -->
+    </header>
+
+
     
     <%= yield %>
 
     <!-- footer section -->
-    <footer>
-      <div class="copy-right">
-        <p>&copy; Vintage Furniture</p>
-      </div>
-      <div class="social-links">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+    <footer class="container-fluid">
+      <div class="container">
+        <div class="copy-right">
+          <p>&copy; Vintage Furniture</p>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
     </footer>
+
+    <script>
+      $(document).ready(function(){
+
+
+        // Nav Menu
+        $('.navbar-nav a').click(function () {
+            $('.navbar-collapse').toggle();
+          });
+
+        $('.burger').click(function(){
+            $('.navbar-collapse').slideToggle("slow");
+        });
+
+        // Nav Roll
+        $(".roll").hover(function(){
+            $('.table-img, .chair-img, .lamp-img').css({'background':'url('+ $(this).attr('src')
+          });
+        });
+
+        $('.table-link').mouseenter(function(){
+          $('.container-full').animate({height:40},200);
+        },function(){
+          $('.container-full').animate({height:350},200);
+          $('.dropdown-nav, .table-img').show();
+          $('.chair-img, .lamp-img').hide();
+        });
+
+        $('.chairs-link').mouseenter(function(){
+          $('.container-full').animate({height:40},200);
+        },function(){
+          $('.container-full').animate({height:350},200);
+          $('.dropdown-nav, .chairs-col, .chair-img').show();
+          $('.table-img, .lamp-img').hide();
+        });
+
+        $('.lamps-link').mouseenter(function(){
+          $('.container-full').animate({height:40},200);
+        },function(){
+          $('.container-full').animate({height:350},200);
+          $('.dropdown-nav, .lamps-col, .lamp-img').show();
+          $('.table-img, .chair-img').hide();
+        });
+
+        $('.table-link').hover(function(){
+          $(this).addClass('link-hover');
+          $('.chairs-link, .lamps-link').removeClass('link-hover');
+          $('.chairs-col').hide();
+          $('.lamps-col').hide();
+          $('.table-col').show();
+        });
+
+        $('.chairs-link').hover(function(){
+          $(this).addClass('link-hover');
+          $('.table-link').removeClass('link-hover');
+          $('.table-link, .lamps-link').removeClass('link-hover');
+          $('.table-col').hide();
+          $('.lamps-col').hide();
+          $('.chairs-col').show();
+        });
+
+        $('.lamps-link').hover(function(){
+          $(this).addClass('link-hover');
+          $('.table-link').removeClass('link-hover');
+          $('.chairs-link, .table-link').removeClass('link-hover');
+          $('.table-col').hide();
+          $('.chairs-col').hide();
+          $('.lamps-col').show();
+        });
+
+        $('.about-link, .contact-link').mouseenter(function(){
+          $('.container-full').animate({height:60},100);
+          $('.dropdown-nav').hide();
+          $('.table-link, .chairs-link, .lamps-link').removeClass('link-hover');
+        })
+
+        $('.container-full').mouseleave(function(){
+          $(this).animate({height:60},200);
+          $('.dropdown-nav').hide();
+        });
+
+
+
+
+      });
+
+
+    </script>
+
+
   </body>
 </html>

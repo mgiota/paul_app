@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+*{ box-sizing: border-box; }
 
 body {
 	font-family: helvetica;
@@ -21,10 +22,14 @@ h3 {
 	font-weight: 200;
 }
 
-// Navigation
+/*Navigation*/
 
 .bg-dark {
-	background-color: #000 !important;
+	background-color: #fbf9f9 !important;	
+}
+
+.navbar-dark .navbar-brand {
+	color: #000;
 }
 
 .burger {
@@ -32,24 +37,49 @@ h3 {
 }
 
 .nav-link {
-	color: #fff !important;
+	color: #000 !important;
+}
+
+.nav-item i {
+	color: #000;
+	font-size: 1.3em;
+	padding-top: 10px;
 }
 
 .hamburger {
-  color: #fff;
+  color: #000;
   font-size: 1.3em;
   background: none;
   border: none;
 }
 
-// Footer
+.navbar-nav {
+	height: 100vh;
+}
+
+/* Rollover Section */
+
+#image-display {
+	display: none;
+
+}
+
+.links {
+	display: none
+}
+
+.preview {
+	display: none;
+}
+
+/*Footer*/
 
 footer {
 	padding-left: 10px;
 	padding-right: 10px;
 	width: 100%;
 	height: 50px;
-	background-color: #000;
+	background-color: #fbf9f9;
 	position: fixed;
 	bottom: 0;
 	z-index: -9;
@@ -58,7 +88,7 @@ footer {
 .copy-right {
 	float: left;
 	padding-top: 10px;
-	color: #fff;
+	color: #000;
 }
 
 .social-links {
@@ -67,7 +97,7 @@ footer {
 }
 
 .social-links a {
-	color: #fff;
+	color: #000;
 	font-size: 1.7em;
 	padding-right: 10px;
 }
@@ -82,45 +112,97 @@ footer {
 
 @media (min-width: 992px) {
 
-	// Navigation
+	/* Navigation */
 
 	.burger {
 		display: none;
 	}
 
-	// Hero
+	.container-full {
+		width: 100%;
+		background-color: #fbf9f9;
+		box-shadow: 2px 2px #eee;
+	}
 
-	.full-width	{
-		padding-left: 0;
+	.navbar-dark .navbar-brand:hover {
+		color: red;
+	}
+
+	.nav-item {
+		padding-right: 10px;
+	}
+
+	.nav-item:last-child {
 		padding-right: 0;
+	}
+
+	.navbar-nav {
+		height: auto;
+	}
+
+	/* Rollover Section */
+
+	.dropdown-nav {
+		width: 1140px;
+		margin: 0 auto;
+		position: relative;
+		z-index: 30;
+		display: none;
+	}
+
+	#image-display {
+		width: 375px;
+		height: 250px;
+		float: left;
+		margin-right: 10px;
+	}
+
+	.links {
+		width: 39%;
+		float: right;
+		display: block;
+	}
+
+	.links-col1 {
+		width: 50%;
+		float: left;
+	}
+
+	.links-col2 {
+		width: 50%;
+		float: left;
+	}
+
+	.link-item {
+		list-style: none;
+	}
+
+	.roll:hover {
+		text-decoration: underline;
+	}
+
+	.chairs-col {
+		display: none;
+	}
+
+	.lamps-col {
+		display: none;
+	}
+
+	.preview {
+		height: 250px;
 		position: absolute;
-		top: 0;
 		z-index: -10;
-		height: 100vh;
-		
+		display: block;
 	}
 
-	.hero-text {
-		margin-top: 10%;
+	.link-hover {
+		text-decoration: underline;
 	}
 
-	.hero-text h1 {
-		text-align: center;
-		color: #fff;
-		font-size: 7em;
+	.table-img, .chair-img, .lamp-img {
+		display: none;
 	}
-
-	.hero-text h3 {
-		text-align: center;
-		color: #fff;
-		font-size: 2em;
-		font-weight: 200;
-		font-style: italic;
-		background-color: #000;
-		width: 25%;
-		margin: auto;
-	}
-
 }
 
 
