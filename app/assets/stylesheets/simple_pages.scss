@@ -203,6 +203,43 @@ footer {
 	.table-img, .chair-img, .lamp-img {
 		display: none;
 	}
+
+	.container {
+		background-color: #fbf9f9;
+		height: 50px;
+	}
+
+	.shopping {
+		top: 8%;
+		left: 20%;
+		position: fixed;
+		z-index:-20;
+	}
+
+	.cart-right {
+		float: right;
+	}
+
+	.social-left {
+		float: left;
+	}
+
+	.shopping-bar  {
+		padding-top: 10px;
+	}
+
+	.shopping-bar a {
+		color: #000;
+		font-size: 1.4em;
+		padding-right: 10px;
+	}
+
+	.shopping-bar a:last-child {
+		padding-right: 0;
+	}
+
+
+
 }
 
 

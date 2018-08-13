@@ -42,15 +42,11 @@
             <li class="nav-item about-link">
               <%= link_to "About", simple_pages_contact_path, class: "nav-link" %>
             </li>
-            <li class="nav-item">
-              <a href="#"><i class="fas fa-search"></i></a>
-            </li>
-            <li class="nav-item">
-              <a href="#"><i class="fas fa-shopping-cart"></i></a>
-            </li>
           </ul>
         </div> <!-- collapse close -->
       </nav> <!-- end nav container -->
+
+      <!-- Dropdown Nav -->
       <div class="dropdown-nav">
         <div class="links">
             <div class="links-col1 table-col">
@@ -169,6 +165,19 @@
     </header>
 
 
+    <!-- Shopping and Search Bar -->
+    <section class="container shopping">
+      <div class="shopping-bar">
+        <div class="cart-right">
+          <a href="#"><i class="fas fa-search"></i></a>
+          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        <div class="social-left">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </section>
     
     <%= yield %>
 
