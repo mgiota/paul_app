@@ -80,14 +80,17 @@ footer {
 	width: 100%;
 	height: 50px;
 	background-color: #fbf9f9;
-	position: fixed;
-	bottom: 0;
-	z-index: -9;
+}
+
+.container-nav {
+	margin-left: 0;
+	margin-right: 0;
 }
 
 .copy-right {
 	float: left;
 	padding-top: 10px;
+
 	color: #000;
 }
 
@@ -98,7 +101,7 @@ footer {
 
 .social-links a {
 	color: #000;
-	font-size: 1.7em;
+	font-size: 1.4em;
 	padding-right: 10px;
 }
 
@@ -110,25 +113,117 @@ footer {
 	padding-right: 0;
 }
 
-@media (min-width: 992px) {
+.carousel-control-next-icon, .carousel-control-prev-icon {
+	background-image: none;
+}
 
-	/* Navigation */
+.carousel-control-next {
+	display: none;
+}
+
+.carousel-control-prev {
+	display: none;
+}
+
+.right-circle {
+	display: none;
+}
+
+.left-circle {
+	display: none;
+}
+
+.hero-text {
+	font-size: 2em;
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+}
+
+.container {
+	max-width: 100%;
+}
+
+.container-full {
+	width: 100%;
+	background-color: #fbf9f9;
+	box-shadow: 2px 2px #eee;
+	position: fixed;
+	z-index: 50;
+	top: 0;
+}
+
+.intro-text {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.items-img {
+	margin-bottom: 30px;
+}
+
+.index-hero {
+	margin-top: 80px;
+}
+
+.title {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+	h3 {
+		text-align: left;
+	}
+
+	.hero-text {
+		font-size: 3em;
+		border-top: 3px solid #fff;
+		border-bottom: 3px solid #fff;
+	}
+
+	.items-img {
+		display: block;
+    	margin: auto;
+    	position: relative;
+	}
+
+	.slide-bg {
+	  	position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    background-color: #fff;
+	    opacity: 0.7;
+	    display: none;
+	}
+
+	.title {
+	    position: absolute;
+	    width: 100%;
+	    top: 40%;
+	    left: 0;
+	    color: #000;
+	    font-size: 1.3em;
+	    text-align: center;
+	    font-weight: 300;
+	    display: none;
+	  }
+}
+
+@media (min-width: 992px) {
 
 	.burger {
 		display: none;
 	}
 
-	.container-full {
-		width: 100%;
-		background-color: #fbf9f9;
-		box-shadow: 2px 2px #eee;
-		position: absolute;
-		z-index: 50;
-		top: 0;
+	.container {
+		max-width: 1100px;
 	}
 
+
 	.navbar-dark .navbar-brand:hover {
-		color: red;
+		color: #797575;
 	}
 
 	.nav-item {
@@ -157,22 +252,22 @@ footer {
 		width: 375px;
 		height: 250px;
 		float: left;
-		margin-right: 10px;
+		margin-left: 10px;
 	}
 
 	.links {
-		width: 39%;
+		width: 60%;
 		float: right;
 		display: block;
 	}
 
 	.links-col1 {
-		width: 50%;
+		width: 40%;
 		float: left;
 	}
 
 	.links-col2 {
-		width: 50%;
+		width: 40%;
 		float: left;
 	}
 
@@ -207,91 +302,107 @@ footer {
 		display: none;
 	}
 
-	/* Shopping Bar Section*/
-
-	.shopping {
-		background-color: #fbf9f9;
-		height: 50px;
-		margin-top: 80px;
-	}
-
-	.cart-right {
-		float: right;
-	}
-
-	.social-left {
-		float: left;
-	}
-
-	.shopping-bar  {
-		padding-top: 10px;
-	}
-
-	.shopping-bar a {
-		color: #000;
-		font-size: 1.4em;
-		padding-right: 10px;
-	}
-
-	.shopping-bar a:last-child {
-		padding-right: 0;
-	}
-
 	/* Carousel*/
+
+	.index-hero {
+		width: 100%;
+	}
+
+	.intro-text {
+		margin-top: 20px;
+		text-align: left;
+	}
+	.intro-text h3 {
+		text-align: left;
+	}
+
+	.thumbnails {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+
+	.intro-text {
+		background-color: #fbf9f9;
+		height: auto;
+		padding: 20px;
+	}
+
+	.title {
+	    font-size: 2em;
+	  }
+}
+
+
+@media (min-width: 1200px) {
+
+	/* Navigation */
+
+	.container {
+		max-width: 1200px;
+	}
+
+	#image-display {
+		margin-right: 10px;
+	}
+
+	.links {
+		width: 38%;
+	}
 
 	.index-hero {
 		width: 1150px;
 		margin: 0 auto;
-		margin-top: 30px;
-	}
-
-	.carousel-control-next-icon, .carousel-control-prev-icon {
-		background-image: none;
+		margin-top: 100px;
 	}
 
 	.carousel-control-next {
+		display: block;
 		opacity: 1;
 		right: -90px;
 	}
 
 	.carousel-control-prev {
+		display: block;
 		opacity: 1;
 		left: -90px;
 	}
 
 	.carousel-control-next-icon i, .carousel-control-prev-icon i {
+		display: block;
 		font-size: 2em;
 		color: #000;
 		padding-top: 8px;
 	}
 
 	.right-circle {
+		display: block;
 		height: 50px;
 		width: 50px;
 		background-color: #fff;
 		border-radius: 50%;
 		display: inline-block;
+		margin-top: 250px;
 	}
 
 	.left-circle {
+		display: block;
 		height: 50px;
 		width: 50px;
 		background-color: #fff;
 		border-radius: 50%;
 		display: inline-block;
+		margin-top: 250px;
+	}
+	
+	.links-col1 {
+		width: 50%;
 	}
 
-	.hero-text {
-		font-size: 4em;
-		border-top: 3px solid #fff;
-		border-bottom: 3px solid #fff;
-
+	.links-col2 {
+		width: 50%;
 	}
-
-
-
 }
-
 
 
 

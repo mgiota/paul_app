@@ -42,6 +42,12 @@
             <li class="nav-item about-link">
               <%= link_to "About", simple_pages_contact_path, class: "nav-link" %>
             </li>
+            <li class="nav-item">
+              <a href="#"><i class="fas fa-search"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </li>
           </ul>
         </div> <!-- collapse close -->
       </nav> <!-- end nav container -->
@@ -163,26 +169,11 @@
           </div>
       </div>
     </header>
-
-
-    <!-- Shopping and Search Bar -->
-    <section class="container shopping">
-      <div class="shopping-bar">
-        <div class="cart-right">
-          <a href="#"><i class="fas fa-search"></i></a>
-          <a href="#"><i class="fas fa-shopping-cart"></i></a>
-        </div>
-        <div class="social-left">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
-      </div>
-    </section>
     
     <%= yield %>
 
     <!-- footer section -->
-    <footer class="container-fluid">
+    <footer class="container-nav">
       <div class="container">
         <div class="copy-right">
           <p>&copy; Vintage Furniture</p>
@@ -273,6 +264,17 @@
           $(this).animate({height:60},200);
           $('.dropdown-nav').hide();
         });
+
+        // Section Index
+        $('.items-img').mouseenter(function(){
+          $('.slide-bg', this).fadeIn('slow');
+          $('.title', this).fadeIn('fast');
+        }).mouseleave (function(){
+          $('.slide-bg', this).fadeOut('fast');
+          $('.title', this).fadeOut('slow');
+        }); 
+
+
 
 
 

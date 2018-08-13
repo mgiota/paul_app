@@ -1,36 +1,108 @@
+<!-- Carousel Section -->
+
 <section class="index-hero">
 	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <%= image_tag "carpentry.jpg", alt: "First slide", class: "d-block w-100" %>
-      <div class="carousel-caption d-none d-md-block">
-    <h5 class="hero-text">Furniture Restoration</h5>
-  </div>
-    </div>
-    <div class="carousel-item">
-      <%= image_tag "furniture.jpg", alt: "Second slide", class: "d-block w-100" %>
-      <div class="carousel-caption d-none d-md-block">
-    <h5 class="hero-text">Skilled Carpentry</h5>
-  </div>
-    </div>
-    <div class="carousel-item">
-      <%= image_tag "varnish.jpg", alt: "Third slide", class: "d-block w-100" %>
-      <div class="carousel-caption d-none d-md-block">
-    <h5 class="hero-text">Attention to Detail</h5>
-  </div>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-  	<div class="left-circle">
-    	<span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
-    </div>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-  	<div class="right-circle">
-    	<span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <%= image_tag "carpentry.jpg", alt: "First slide", class: "d-block w-100" %>
+	      <div class="carousel-caption d-none d-md-block">
+	    <h5 class="hero-text">Furniture Restoration</h5>
+	  </div>
+	    </div>
+	    <div class="carousel-item">
+	      <%= image_tag "furniture.jpg", alt: "Second slide", class: "d-block w-100" %>
+	      <div class="carousel-caption d-none d-md-block">
+	    <h5 class="hero-text">Skilled Carpentry</h5>
+	  </div>
+	    </div>
+	    <div class="carousel-item">
+	      <%= image_tag "varnish.jpg", alt: "Third slide", class: "d-block w-100" %>
+	      <div class="carousel-caption d-none d-md-block">
+	    <h5 class="hero-text">Attention to Detail</h5>
+	  </div>
+	    </div>
+	  </div>
+	  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+	  	<div class="left-circle">
+	    	<span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+	    </div>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+	  	<div class="right-circle">
+	    	<span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+		</div>
+	    <span class="sr-only">Next</span>
+	  </a>
 	</div>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
 </section>
+
+<!-- Guarantee Text -->
+<section class="container intro-text">
+	<div class="row">
+		<div class="col-sm-12 col-md-6 col-lg-6">
+			<%= image_tag "guaratee.jpg", alt: "Guaranteed", class: "img-fluid" %>
+		</div>
+		<div class="col-sm-12 col-md-6 col-lg-6">
+			<h3>Quality Guaranteed</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+			</p>
+
+			<p>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+			</p>
+		</div>
+	</div>
+</section>
+
+<!-- Items Section -->
+<section class="container thumbnails">
+	<div class="row">
+		<div class="col-sm-12 col-md-4 col-lg-4 items-img">
+			<%= image_tag "table-section.jpg", alt: "Table Section", class: "img-fluid" %>
+			<span class="slide-bg"></span>
+			<span class="title"><p class="proj-title">Antique Tables</p></span>
+		</div>
+		<div class="col-sm-12 col-md-4 col-lg-4 items-img">
+			<%= image_tag "chair-section.jpg", alt: "Chair Section", class: "img-fluid" %>
+			<span class="slide-bg"></span>
+			<span class="title"><p class="proj-title">Antique Chairs</p></span>
+		</div>
+		<div class="col-sm-12 col-md-4 col-lg-4 items-img">
+			<%= image_tag "lamp-section.jpg", alt: "Lamps Section", class: "img-fluid" %>
+			<span class="slide-bg"></span>
+			<span class="title"><p class="proj-title">Vintage Lamps</p></span>
+		</div>
+	</div>
+</section>
+
+<!-- Returns Text -->
+<section class="container intro-text">
+	<div class="row">
+		<div class="col-sm-12 col-md-6 col-lg-6">
+			<h3>Free Delivery</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+			</p>
+
+			<p>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+			</p>
+		</div>
+		<div class="col-sm-12 col-md-6 col-lg-6">
+			<%= image_tag "delivery-section.jpg", alt: "Delivery", class: "img-fluid" %>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
