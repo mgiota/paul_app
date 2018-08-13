@@ -28,19 +28,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item table-link">
-              <%= link_to "Tables", root_path, class: "nav-link" %>
+              <%= link_to "Tables", simple_pages_tables_path, class: "nav-link" %>
             </li>
             <li class="nav-item chairs-link">
-              <%= link_to "Chairs", simple_pages_about_path, class: "nav-link" %>
+              <%= link_to "Chairs", simple_pages_chairs_path, class: "nav-link" %>
             </li>
             <li class="nav-item lamps-link">
-              <%= link_to "Lamps", simple_pages_contact_path, class: "nav-link" %>
+              <%= link_to "Lamps", simple_pages_lamps_path, class: "nav-link" %>
             </li>
             <li class="nav-item contact-link">
               <%= link_to "Contact", simple_pages_contact_path, class: "nav-link" %>
             </li>
             <li class="nav-item about-link">
-              <%= link_to "About", simple_pages_contact_path, class: "nav-link" %>
+              <%= link_to "About", simple_pages_about_path, class: "nav-link" %>
             </li>
             <li class="nav-item">
               <a href="#"><i class="fas fa-search"></i></a>
@@ -125,9 +125,6 @@
               <li class="link-item">
                 <a href="#" class="nav-link roll" <%= image_tag("table9.jpg") %>Stained Dinning Table</a>
               </li>
-              <li class="link-item">
-                <a href="#" class="nav-link roll" <%= image_tag("table10.jpg") %>Vintage Reception Table</a>
-              </li>
             </div>
             <div class="links-col2 chairs-col">
               <li class="link-item">
@@ -139,9 +136,6 @@
               <li class="link-item">
                 <a href="#" class="nav-link roll" <%= image_tag("chair7.jpg") %>Gothic Dinnning Chairs</a>
               </li>
-              <li class="link-item">
-                <a href="#" class="nav-link roll" <%= image_tag("chair8.jpg") %>Art Deco Chairs</a>
-              </li>
             </div>
             <div class="links-col2 lamps-col">
               <li class="link-item">
@@ -152,9 +146,6 @@
               </li>
               <li class="link-item">
                 <a href="#" class="nav-link roll" <%= image_tag("lamp9.jpg") %>Retro Switch Light</a>
-              </li>
-              <li class="link-item">
-                <a href="#" class="nav-link roll" <%= image_tag("lamp6.jpg") %>Element Blub</a>
               </li>
             </div>
           </div>
