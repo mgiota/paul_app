@@ -122,6 +122,9 @@ footer {
 		width: 100%;
 		background-color: #fbf9f9;
 		box-shadow: 2px 2px #eee;
+		position: absolute;
+		z-index: 50;
+		top: 0;
 	}
 
 	.navbar-dark .navbar-brand:hover {
@@ -204,16 +207,12 @@ footer {
 		display: none;
 	}
 
-	.container {
-		background-color: #fbf9f9;
-		height: 50px;
-	}
+	/* Shopping Bar Section*/
 
 	.shopping {
-		top: 8%;
-		left: 20%;
-		position: fixed;
-		z-index:-20;
+		background-color: #fbf9f9;
+		height: 50px;
+		margin-top: 80px;
 	}
 
 	.cart-right {
@@ -236,6 +235,57 @@ footer {
 
 	.shopping-bar a:last-child {
 		padding-right: 0;
+	}
+
+	/* Carousel*/
+
+	.index-hero {
+		width: 1150px;
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+
+	.carousel-control-next-icon, .carousel-control-prev-icon {
+		background-image: none;
+	}
+
+	.carousel-control-next {
+		opacity: 1;
+		right: -90px;
+	}
+
+	.carousel-control-prev {
+		opacity: 1;
+		left: -90px;
+	}
+
+	.carousel-control-next-icon i, .carousel-control-prev-icon i {
+		font-size: 2em;
+		color: #000;
+		padding-top: 8px;
+	}
+
+	.right-circle {
+		height: 50px;
+		width: 50px;
+		background-color: #fff;
+		border-radius: 50%;
+		display: inline-block;
+	}
+
+	.left-circle {
+		height: 50px;
+		width: 50px;
+		background-color: #fff;
+		border-radius: 50%;
+		display: inline-block;
+	}
+
+	.hero-text {
+		font-size: 4em;
+		border-top: 3px solid #fff;
+		border-bottom: 3px solid #fff;
+
 	}
 
 
