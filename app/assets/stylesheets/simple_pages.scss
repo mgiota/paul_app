@@ -323,6 +323,10 @@ footer {
 		max-width: 1200px;
 	}
 
+	.details p{
+		margin-bottom: 2px;
+	}
+
 	/* Rollover Elemnets */
 
 	#image-display {
@@ -420,8 +424,8 @@ footer {
 
 	/* Maps */
 
-	#map {
-		height: 200px;
+	#map, #map2 {
+		height: 500px;
 	}
 
 }
