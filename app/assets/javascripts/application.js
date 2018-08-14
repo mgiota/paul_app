@@ -91,6 +91,7 @@ $('.about-link, .contact-link').mouseenter(function(){
 
 $('.container-full').mouseleave(function(){
   $(this).animate({height:60},200);
+  $('.table-link, .chairs-link, .lamps-link').removeClass('link-hover');
   $('.dropdown-nav').hide();
 });
 

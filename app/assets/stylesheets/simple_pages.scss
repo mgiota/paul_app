@@ -342,7 +342,7 @@ footer {
 	}
 
 	.links {
-		width: 38%;
+		width: 50%;
 	}
 
 	/* Carousel Section*/
@@ -426,6 +426,10 @@ footer {
 
 	#map, #map2 {
 		height: 500px;
+	}
+
+	.red-link {
+		color: red !important;
 	}
 
 }
