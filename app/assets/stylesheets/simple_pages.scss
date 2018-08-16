@@ -57,20 +57,6 @@ h3 {
   height: 100vh;
 }
 
-/* Hidden Rollover Elements */
-
-#image-display {
-  display: none;
-}
-
-.links {
-  display: none
-}
-
-.preview {
-  display: none;
-}
-
 /*Footer*/
 
 footer {
@@ -194,14 +180,15 @@ footer {
 	.title {
 	    position: absolute;
 	    width: 100%;
-	    top: 40%;
+	    height: 100%;
+	    top: 0;
 	    left: 0;
 	    color: #000;
 	    font-size: 1.3em;
 	    text-align: center;
 	    font-weight: 300;
 	    display: none;
-	  }
+	    padding-top:100px;	  }
 }
 
 @media (min-width: 992px) {
@@ -224,6 +211,10 @@ footer {
 		padding-right: 10px;
 	}
 
+	.nav-item:hover {
+		text-decoration: underline;
+	}
+
 	.nav-item:last-child {
 		padding-right: 0;
 	}
@@ -234,11 +225,11 @@ footer {
 
 	/* Rollover Section */
 
-	.dropdown-nav {
+	.dropdown-tables, .dropdown-chairs, .dropdown-lamps {
+		padding-top: 20px;
 		width: 1140px;
+		height: 270px;
 		margin: 0 auto;
-		position: relative;
-		z-index: 30;
 		display: none;
 	}
 
@@ -273,10 +264,6 @@ footer {
 		text-decoration: underline;
 	}
 
-	.chairs-col {
-		display: none;
-	}
-
 	.lamps-col {
 		display: none;
 	}
@@ -290,10 +277,6 @@ footer {
 
 	.link-hover {
 		text-decoration: underline;
-	}
-
-	.table-img, .chair-img, .lamp-img {
-		display: none;
 	}
 
 	/* Carousel */
@@ -432,6 +415,10 @@ footer {
 		color: red !important;
 	}
 
+
+	.hide {
+		display: none;
+	}
 }
 
 
