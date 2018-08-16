@@ -88,7 +88,7 @@
               </li>
             </div>
         </div>
-        <div id="image-display" class="table-img">
+        <div id="image-display" class="show-img">
             <%= image_tag("table-preview.jpg", class: "img-fluid preview") %>
         </div>
       </div>
@@ -128,7 +128,7 @@
               </li>
             </div>
         </div>
-        <div id="image-display" class="table-img">
+        <div id="image-display" class="show-img">
             <%= image_tag("chair-preview.jpg", class: "img-fluid preview") %>
         </div>
       </div>
@@ -168,7 +168,7 @@
               </li>
             </div>
         </div>
-        <div id="image-display" class="table-img">
+        <div id="image-display" class="show-img">
             <%= image_tag("lamp-preview.jpg", class: "img-fluid preview") %>
         </div>
       </div>
@@ -192,15 +192,22 @@
 
     <script>
 
-      $(document).ready(function() {
+      $(document).ready(function(){
           
           // Nav Menu
           $('.navbar-nav a').click(function () {
             $('.navbar-collapse').toggle();
           });
 
+          // Nav Button
           $('.burger').click(function(){
             $('.navbar-collapse').slideToggle("slow");
+          });
+
+          // Nav Roll
+          $(".roll").hover(function(){
+              $('.show-img').css({'background':'url('+ $(this).attr('src')
+            });
           });
 
           // Table Dropdown
@@ -246,23 +253,7 @@
           }); 
 
       });
-=======
-          // Table Link
-          $('.table-link').hover(function(){
-            $('.container-full').animate({height:350},200);
-            $('.table-link').addClass('link-hover');
-          });
 
-
-          // $('.container-full').mouseleave(function(){
-          //   $(this).animate({height:60},200);
-          //   $('.table-link, .chairs-link, .lamps-link').removeClass('link-hover');
-          //   $('.dropdown-nav').hide();
-          // });
-
-        
-        });
->>>>>>> 9dcd514f270d942362cb71fd63ba0e885988bbdd
     </script>
 
   </body>
