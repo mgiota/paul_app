@@ -193,6 +193,8 @@
     <script>
 
       $(document).ready(function(){
+        //Dropdown menu fix
+        $(document).one('mousemove', function() {
           
           // Nav Menu
           $('.navbar-nav a').click(function () {
@@ -251,6 +253,7 @@
             $('.slide-bg', this).fadeOut('fast');
             $('.title', this).fadeOut('slow');
           }); 
+        });
 
       });
 
