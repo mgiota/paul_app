@@ -1,0 +1,93 @@
+<p id="notice"><%= notice %></p>
+
+<div class="hero-section">
+  <h1>Shop Comming Soon</h1>
+  <p>Check back in a few weeks and bring your wallet!</p>
+</div>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Image url</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td><%= product.name %></td>
+        <td><%= product.description %></td>
+        <td><%= product.image_url %></td>
+        <td><%= link_to 'Show', product %></td>
+        <td><%= link_to 'Edit', edit_product_path(product) %></td>
+        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Product', new_product_path, class: "hide-products" %>
+
+<!-- Items Section -->
+<section class="container thumbnails section-top">
+  <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-4 items-img">
+      <%= image_tag "thumb-table1.jpg", alt: "Chair Section", class: "img-fluid" %>
+      <span class="slide-bg"></span>
+      <span class="title"><p class="proj-title"><i class="fas fa-shopping-cart"></i></p></span>
+      <%= link_to "", simple_pages_chairs_path, class: "title" %>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4 items-img">
+      <%= image_tag "thumb-table2.jpg", alt: "Chair Section", class: "img-fluid" %>
+      <span class="slide-bg"></span>
+      <span class="title"><p class="proj-title"><i class="fas fa-shopping-cart"></i></p></span>
+      <%= link_to "", simple_pages_chairs_path, class: "title" %>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4 items-img">
+      <%= image_tag "thumb-table3.jpg", alt: "Chair Section", class: "img-fluid" %>
+      <span class="slide-bg"></span>
+      <span class="title"><p class="proj-title"><i class="fas fa-shopping-cart"></i></p></span>
+      <%= link_to "", simple_pages_chairs_path, class: "title" %>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4 items-img">
+      <%= image_tag "thumb-table4.jpg", alt: "Chair Section", class: "img-fluid" %>
+      <span class="slide-bg"></span>
+      <span class="title"><p class="proj-title"><i class="fas fa-shopping-cart"></i></p></span>
+      <%= link_to "", simple_pages_chairs_path, class: "title" %>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4 items-img">
+      <%= image_tag "thumb-table5.jpg", alt: "Chair Section", class: "img-fluid" %>
+      <span class="slide-bg"></span>
+      <span class="title"><p class="proj-title"><i class="fas fa-shopping-cart"></i></p></span>
+      <%= link_to "", simple_pages_chairs_path, class: "title" %>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4 items-img">
+      <%= image_tag "thumb-table6.jpg", alt: "Chair Section", class: "img-fluid" %>
+      <span class="slide-bg"></span>
+      <span class="title"><p class="proj-title"><i class="fas fa-shopping-cart"></i></p></span>
+      <%= link_to "", simple_pages_chairs_path, class: "title" %>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4 items-img">
+      <%= image_tag "thumb-table7.jpg", alt: "Chair Section", class: "img-fluid" %>
+      <span class="slide-bg"></span>
+      <span class="title"><p class="proj-title"><i class="fas fa-shopping-cart"></i></p></span>
+      <%= link_to "", simple_pages_chairs_path, class: "title" %>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4 items-img">
+      <%= image_tag "thumb-table8.jpg", alt: "Chair Section", class: "img-fluid" %>
+      <span class="slide-bg"></span>
+      <span class="title"><p class="proj-title"><i class="fas fa-shopping-cart"></i></p></span>
+      <%= link_to "", simple_pages_chairs_path, class: "title" %>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4 items-img">
+      <%= image_tag "thumb-table9.jpg", alt: "Chair Section", class: "img-fluid" %>
+      <span class="slide-bg"></span>
+      <span class="title"><p class="proj-title"><i class="fas fa-shopping-cart"></i></p></span>
+      <%= link_to "", simple_pages_chairs_path, class: "title" %>
+    </div>
+  </div>
+</section>
