@@ -25,7 +25,7 @@ h3 {
 /*Navigation*/
 
 .bg-dark {
-	background-color: #fbf9f9 !important;	
+	background-color: #fbf9f9 !important;
 }
 
 .navbar-dark .navbar-brand {
@@ -44,6 +44,7 @@ h3 {
 
 .burger {
 	display: block;
+	padding-right: 20px;
 }
 
 .hamburger {
@@ -51,6 +52,8 @@ h3 {
   font-size: 1.3em;
   background: none;
   border: none;
+	cursor: pointer
+
 }
 
 .navbar-nav {
@@ -230,7 +233,7 @@ footer {
 	    text-align: center;
 	    font-weight: 300;
 	    display: none;
-	    padding-top:100px;	  
+	    padding-top:100px;
 	}
 
 	.top-space {
@@ -434,7 +437,7 @@ footer {
 		display: inline-block;
 		margin-top: 250px;
 	}
-	
+
 	/* Thumbnails */
 
 	.thumbnails {
@@ -463,10 +466,3 @@ footer {
 		display: none;
 	}
 }
-
-
-
-
-
-
-
